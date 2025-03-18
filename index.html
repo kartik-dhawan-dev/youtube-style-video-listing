@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="favicon.ico" type="image/png">
+
+</head>
+
+<body class="text-white bg-[#0F0F0F]">
+    <nav class="bg-[#0F0F0F] shadow-md shadow-gray-900 p-6 flex flex-wrap items-center gap-4">
+        <div class="flex items-center gap-2 flex-shrink-0">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" class="h-8">
+            <span class="text-xl font-semibold">YouTube</span>
+        </div>
+        <div class="flex-grow flex justify-end sm:justify-center">
+            <div class="relative w-full sm:w-[280px] md:w-[400px] lg:w-[500px]">
+                <input id="search-field" type="text" placeholder="Search" class="w-full shadow-sm shadow-gray-500/50 
+                px-4 py-2 rounded-full text-white bg-[#181818] focus:outline-none">
+                <button id="search-button" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM8 14a6 6 0 100-12 6 6 0 000 12z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="video-container" class="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+    </main>
+
+    <script src="constants.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
